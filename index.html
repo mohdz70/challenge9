@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      let Tbl1 = [5, 38, 13, 3, 10, 11, 12, 14, 26, 38, 20];
+      let Tbl2 = Tbl1.filter((temp) => {
+        return temp % 2 == 0;
+      });
+      console.log(Tbl2);
+
+      function TrouveLongMot(tab) {
+        return tab.reduce((a, b) => (a.length < b.length ? b : a), "");
+      }
+
+      console.log(TrouveLongMot(["cheraga", "Annaba", "Salam", "Algerie"])); // Algerie
+    </script>
+  </head>
+  <body></body>
+</html>
